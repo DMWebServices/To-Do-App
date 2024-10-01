@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do App</title>
+
+    <!-- Googles Font CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS Custom -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!-- Header -->
+    <header>   
+        <nav class="navbar" >
+            <!-- Logo -->
+            <div class="navbar-logo">
+                <h2>To Do App</h2>
+            </div>
+            <!-- Navbar Items -->
+            <ul class="navbar-items">
+                <li><a href="">Do App</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+        </header>
+    <!-- /Header -->
+
+    <!-- To Do App -->    
+    <section class="todo-app">
+        <!-- Left Col-->
+        <div class="todo-app-sidebar">
+            <div class="todo-app-user-nav">
+                <!-- Username -->
+                <div class="todo-app-username">
+                    <h3>Hello <span id="usersname">Sarah</span></h3>
+                </div>
+                <!-- Date -->
+                <div class="todo-app-date">
+                    <h3>Its <span>Monday, 31st January</span></h3>
+                </div>            
+            </div>
+            <!-- To Do App Navbar-->
+            <!-- <div class="todo-app-navbar">
+                <ul class="todo-app-nav-items">
+                    <li>Create New ToDo<span><i class="plus-icon fa-solid fa-square-plus"></i></span></li>
+                </ul>            
+            </div> -->
+        </div>
+        <!-- Right Col-->
+        <div class="todo-app-cards">
+            <h2 class="todo-app-cards-title">To Do's List</h2>
+            <div class="add-todo-item">
+                <label class="add-todo-item-label" for="">Add an ToDo Item</label>
+                <div class="input-ctrls">
+                    <input id="add-todo-input" class="add-todo-item-input" type="text" placeholder="Add a ToDo Item">
+                    <button id="add-todo-btn" class="add-todo-item-btn">Add a ToDo Item <i class="plus-icon fa-solid fa-square-plus"></i></button>
+                </div>
+            </div>
+            <ul class="todo-app-list">
+                <li class="todo-app-item">
+                <p id="todo-app-content"></p>
+                <span>
+                    <!-- Completed -->
+                    <i id="complete-todo" class="completed fa-solid fa-check"></i>
+                    <!-- Delete -->
+                    <i id="delete-todo" class="delete fa-regular fa-circle-xmark"></i>
+                </span>
+                </li>  
+                
+            </ul>
+        </div>
+        
+    </section>
+
+    <script src="app.js"></script>
+
+</body>
+</html>

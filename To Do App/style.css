@@ -1,0 +1,62 @@
+/*=== Global CSS Variables ===*/
+
+:root { 
+    --primary-color: #1f1e1e;
+    --secondardy-color: red;
+    --Main-font-colour: green;
+    --light-color: #fff;
+    --danger: rgb(201, 33, 33);
+    --success: rgb(16, 131, 16); 
+
+    --Heading-text-size: 40px;
+    --Sub-heading-text-size: 24px;
+    --navbar-text: 24px;
+    --Paragraph: 18px;
+    --icon-med-size: 28px; 
+}
+
+/** Global Classes **/
+* { padding: 0; margin: 0; }
+body { font-family: "Poppins", system-ui; font-weight: 400; font-style: normal; }
+
+
+/** Header CSS Classes **/
+a { text-decoration: none; }
+li { list-style: none; }
+
+
+
+/** Header CSS Classes **/
+.navbar { background-color: var(--primary-color); display: flex; align-items: center; justify-content: space-between; padding: 0px 50px; }
+.navbar-logo { font-size: var(--Heading-text-size); color: var(--light-color); }
+.navbar-items { display: flex; gap: 20px; font-size: var(--navbar-text); align-items: center; }
+.navbar-items a { color: var(--light-color); }
+
+
+/*=== ToDo App CSS ===*/
+
+/** App Sidebar **/
+.todo-app { display: flex; }
+.todo-app-sidebar { background-color: var(--primary-color); width: 15%; padding: 52px; color: var(--light-color); height: 80vh; }
+.todo-app-navbar { margin-top: 22px; }
+.todo-app-nav-items li { display: flex; align-items: center; }
+.todo-app-username { font-size: var(--Sub-heading-text-size); }
+.todo-app-date { font-size: 14px; }
+
+.plus-icon { color: var(--primary-color); margin-left: 20px; font-size: 38px;}
+
+/** Add ToDo**/
+.add-todo-item { margin-bottom: 32px; }
+.add-todo-item-label { font-size: var(--Sub-heading-text-size); padding: 4px; }
+.input-ctrls { display: flex; align-items: center; }
+.add-todo-item-input { border: none; border-bottom: 2px var(--primary-color) solid; font-size: var(--Paragraph); padding: 4px; margin-right: 12px; }
+.add-todo-item-btn { cursor: pointer; background-color: transparent; border: solid var(--primary-color) 1px; display: flex; align-items: center; padding: 8px; font-size: 18px;  }
+
+/** ToDo App Cards**/
+.todo-app-cards { width: 85%; padding: 52px; }
+.todo-app-cards-title { font-size: var(--Heading-text-size); margin-bottom: 12px;}
+.todo-app-list { display: flex; gap: 12px; flex-direction: column; }
+.todo-app-item { font-weight: 600; display: flex; align-items: center; justify-content: space-between; width: 550px; border: solid var(--primary-color) 1px; padding: 12px; }
+.todo-app-item:hover { background-color: #ddd; transition: 0.5s; }
+.delete {  cursor: pointer; color: var(--danger); font-size: var(--icon-med-size); }
+.completed { cursor: pointer; color: var(--success); font-size: var(--icon-med-size); margin-right: 12px; }
